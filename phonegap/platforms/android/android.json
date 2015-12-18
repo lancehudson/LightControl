@@ -1,0 +1,82 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"ChromeSocketsUdp\"><param name=\"android-package\" value=\"org.chromium.ChromeSocketsUdp\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.lancehudson.lightcontrol"
+        },
+        "org.chromium.common": {
+            "PACKAGE_NAME": "com.lancehudson.lightcontrol"
+        },
+        "org.chromium.sockets.udp": {
+            "PACKAGE_NAME": "com.lancehudson.lightcontrol"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "pluginId": "cordova-plugin-whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/org.chromium.common/events.js",
+            "id": "org.chromium.common.events",
+            "pluginId": "org.chromium.common",
+            "clobbers": [
+                "chrome.Event"
+            ]
+        },
+        {
+            "file": "plugins/org.chromium.common/errors.js",
+            "id": "org.chromium.common.errors",
+            "pluginId": "org.chromium.common"
+        },
+        {
+            "file": "plugins/org.chromium.common/stubs.js",
+            "id": "org.chromium.common.stubs",
+            "pluginId": "org.chromium.common"
+        },
+        {
+            "file": "plugins/org.chromium.common/helpers.js",
+            "id": "org.chromium.common.helpers",
+            "pluginId": "org.chromium.common"
+        },
+        {
+            "file": "plugins/org.chromium.sockets.udp/sockets.udp.js",
+            "id": "org.chromium.sockets.udp.sockets.udp",
+            "pluginId": "org.chromium.sockets.udp",
+            "clobbers": [
+                "chrome.sockets.udp"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.0",
+        "org.chromium.common": "1.0.6",
+        "org.chromium.sockets.udp": "1.2.1"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "org.chromium.sockets.udp": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.sockets.udp"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.chromium.common": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.common"
+        },
+        "is_top_level": false,
+        "variables": {}
+    }
+}
