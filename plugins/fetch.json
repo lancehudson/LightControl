@@ -1,0 +1,10 @@
+{
+    "org.chromium.sockets.udp": {
+        "source": {
+            "type": "registry",
+            "id": "org.chromium.sockets.udp"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
